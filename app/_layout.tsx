@@ -1,9 +1,12 @@
 import { DrawerContentScrollView } from "@react-navigation/drawer";
 import { Ionicons } from "@expo/vector-icons";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
-import { Link, useSegments } from "expo-router";
+import { Link, useSegments, useRouter } from "expo-router";
 import { Drawer } from "expo-router/drawer";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { useEffect } from "react";
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { useNotificationInit } from "../src/hooks/useNotificationInit";
 
 import "../global.css";
 
@@ -40,9 +43,31 @@ const DrawerLink = ({ href, label, icon, onPress }: DrawerLinkProps) => (
 
 const RootLayout = () => {
   const segments = useSegments();
+  const router = useRouter();
   const currentScreen = segments[segments.length - 1] || "Dashboard";
   const drawerTitle = currentScreen === "(tabs)" ? "Dashboard" :
     currentScreen.charAt(0).toUpperCase() + currentScreen.slice(1);
+
+  // Initialize notifications
+  useNotificationInit();
+
+  // Check onboarding status
+  useEffect(() => {
+    const checkOnboarding = async () => {
+      try {
+        const completed = await AsyncStorage.getItem('plantpulse_onboarding_complete');
+        const inOnboarding = segments[0] === 'onboarding';
+
+        if (!completed && !inOnboarding) {
+          router.replace('/onboarding');
+        }
+      } catch (error) {
+        console.error('[Layout] Failed to check onboarding status:', error);
+      }
+    };
+
+    checkOnboarding();
+  }, [segments, router]);
 
   return (
     <QueryClientProvider client={client}>

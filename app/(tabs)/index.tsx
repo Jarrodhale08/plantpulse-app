@@ -3,6 +3,8 @@ import { View, Text, ScrollView, TouchableOpacity, StyleSheet, ActivityIndicator
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
+import { useSubscriptionStore } from '../../src/stores/subscriptionStore';
+import { FREE_TIER_LIMITS, getRemainingPlants } from '../../src/config/premiumFeatures';
 
 interface Plant {
   id: string;
@@ -32,6 +34,10 @@ export default function Screen() {
   });
   const [refreshing, setRefreshing] = useState(false);
   const router = useRouter();
+  const { isPremium } = useSubscriptionStore();
+
+  // Calculate remaining plants for free users
+  const remainingPlants = getRemainingPlants(homeData.totalPlants, isPremium);
 
   const loadData = useCallback(async () => {
     try {
@@ -115,8 +121,8 @@ export default function Screen() {
         <Text style={styles.headerSubtitle}>Your Plant Care Companion</Text>
       </View>
       
-      <ScrollView 
-        style={styles.content} 
+      <ScrollView
+        style={styles.content}
         contentContainerStyle={styles.scrollContent}
         refreshControl={
           <RefreshControl
@@ -126,6 +132,27 @@ export default function Screen() {
           />
         }
       >
+        {/* Premium Banner for Free Users */}
+        {!isPremium && (
+          <TouchableOpacity
+            style={styles.premiumBanner}
+            onPress={() => router.push('/subscription')}
+            accessibilityLabel="Upgrade to Premium"
+            accessibilityRole="button"
+          >
+            <Ionicons name="star" size={24} color="#F59E0B" />
+            <View style={styles.premiumContent}>
+              <Text style={styles.premiumTitle}>Upgrade to Pro</Text>
+              <Text style={styles.premiumSubtitle}>
+                {typeof remainingPlants === 'number' && remainingPlants > 0
+                  ? `${remainingPlants} free plants remaining`
+                  : `${homeData.totalPlants}/${FREE_TIER_LIMITS.maxPlants} plants used`}
+              </Text>
+            </View>
+            <Ionicons name="chevron-forward" size={20} color="#F59E0B" />
+          </TouchableOpacity>
+        )}
+
         <View style={styles.statsContainer}>
           <View style={styles.statCard}>
             <Text style={styles.statValue}>{homeData.totalPlants}</Text>
@@ -205,6 +232,36 @@ const styles = StyleSheet.create({
   headerSubtitle: { fontSize: 14, color: '#6B7280' },
   content: { flex: 1 },
   scrollContent: { paddingBottom: 20 },
+  premiumBanner: {
+    backgroundColor: '#FFFBEB',
+    borderRadius: 12,
+    padding: 16,
+    marginHorizontal: 16,
+    marginTop: 16,
+    borderWidth: 1,
+    borderColor: '#FDE68A',
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.05,
+    shadowRadius: 2,
+    elevation: 2,
+  },
+  premiumContent: {
+    flex: 1,
+  },
+  premiumTitle: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: '#92400E',
+    marginBottom: 2,
+  },
+  premiumSubtitle: {
+    fontSize: 13,
+    color: '#B45309',
+  },
   loadingContainer: { flex: 1, justifyContent: 'center', alignItems: 'center' },
   errorContainer: { flex: 1, justifyContent: 'center', alignItems: 'center', padding: 20 },
   errorText: { fontSize: 16, color: '#EF4444', textAlign: 'center', marginBottom: 16 },

@@ -1,0 +1,236 @@
+================================================================================
+                    PLANTPULSE - PRE-PUBLICATION CHECKLIST
+================================================================================
+
+Generated: December 24, 2024
+App: PlantPulse
+Category: Lifestyle/Plant Care
+Bundle ID: com.plantpulse.app
+
+================================================================================
+COMPLETED - Already Done
+================================================================================
+
+[X] App code generation completed
+[X] Onboarding screen with 7-day free trial CTA
+[X] Plant detail and add screens with premium limits
+[X] Notification service and store created
+[X] Subscription store (RevenueCat) configured
+[X] Premium banner added to home screen
+[X] Premium features configured for plant care
+[X] .env file created with placeholder keys
+
+================================================================================
+REQUIRED - Must complete before App Store/Play Store submission
+================================================================================
+
+[ ] REVENUECAT SETUP
+    1. Create account at https://revenuecat.com
+    2. Create new project for PlantPulse
+    3. Copy API key and replace in .env:
+       EXPO_PUBLIC_REVENUECAT_API_KEY=your_actual_key_here
+
+[ ] SUPABASE CONFIGURATION
+    1. Verify Build project credentials in .env are correct
+    2. Enable Email/Password authentication in Supabase Dashboard
+    3. Configure email templates (optional)
+    4. Test authentication flow
+
+[ ] APP STORE PRODUCTS (iOS)
+    1. Go to App Store Connect → Your App → In-App Purchases
+    2. Create auto-renewable subscription group: "PlantPulse Pro"
+    3. Add subscription products:
+       - Monthly: $4.99/month (com.plantpulse.monthly)
+       - Yearly: $29.99/year (com.plantpulse.yearly)
+       - Optional: Lifetime: $49.99 (com.plantpulse.lifetime)
+    4. Configure 7-day free trial for each subscription:
+       - Subscription Prices → Introductory Offers
+       - Add Free Trial: 7 days, Free
+
+[ ] GOOGLE PLAY PRODUCTS (Android)
+    1. Go to Play Console → Your App → Monetize → Subscriptions
+    2. Create matching subscription products:
+       - Monthly: $4.99/month
+       - Yearly: $29.99/year
+       - Optional: Lifetime: $49.99
+    3. Configure 7-day free trial:
+       - Base Plan → Offers → Free trial
+       - Set trial period: 7 days
+
+[ ] REVENUECAT PRODUCT CONFIGURATION
+    1. Import products from App Store Connect
+    2. Import products from Google Play Console
+    3. Create Entitlement: "plantpulse_pro"
+    4. Attach all subscription products to the entitlement
+    5. Create "default" Offering with packages:
+       - Monthly ($4.99/month)
+       - Yearly ($29.99/year)
+       - Lifetime ($49.99 one-time) [optional]
+    6. Design paywall in RevenueCat Paywall Editor
+    7. Attach paywall to default offering
+
+[ ] NOTIFICATION SETUP
+    1. Test push notification permissions on physical device
+    2. Configure notification channels (already done in code)
+    3. Test watering reminders
+    4. Verify notifications work when app is in background
+
+[ ] PLANT IDENTIFICATION API (Optional)
+    1. Get API key from https://admin.kindwise.com/
+    2. Update .env: EXPO_PUBLIC_PLANTID_API_KEY=your_key
+    3. Free tier: 100 identifications per day
+
+[ ] APP ICON AND SPLASH SCREEN
+    1. Verify assets/images/icon.png exists (1024x1024)
+    2. Verify assets/images/adaptive-icon.png exists (Android)
+    3. Verify assets/images/splash.png exists
+    4. Update colors/branding if needed
+
+[ ] PRIVACY POLICY AND TERMS OF SERVICE
+    1. Create privacy policy (required for App Store)
+    2. Create terms of service
+    3. Host documents online (can use GitHub Pages)
+    4. Add links to app/settings/about.tsx
+    5. Update app.json with privacy policy URL
+
+[ ] TEST ON PHYSICAL DEVICES
+    1. Test on iOS device (iPhone)
+    2. Test on Android device
+    3. Test onboarding flow
+    4. Test free tier limits (10 plants max)
+    5. Test premium upgrade flow
+    6. Test 7-day trial subscription
+    7. Test notifications
+    8. Test plant add/edit/delete
+
+[ ] APP STORE METADATA
+    1. Prepare app description (highlight features)
+    2. Prepare keywords for ASO (App Store Optimization)
+    3. Take 5-6 screenshots per device size
+    4. Create promotional text
+    5. Prepare support email address
+
+================================================================================
+PRODUCTION DEPLOYMENT
+================================================================================
+
+[ ] MIGRATE TO PRODUCTION SUPABASE (After Testing Complete)
+    1. Contact developer to run migration on Production project
+    2. Update .env with Production credentials:
+       EXPO_PUBLIC_SUPABASE_URL=https://aweahqgyrthpdxrnzaoi.supabase.co
+       EXPO_PUBLIC_SUPABASE_ANON_KEY=production_key_here
+    3. Verify Production migration successful
+
+[ ] BUILD FOR PRODUCTION
+    1. Install EAS CLI: npm install -g eas-cli
+    2. Configure EAS: eas build:configure
+    3. Build iOS: eas build --platform ios --profile production
+    4. Build Android: eas build --platform android --profile production
+    5. Download builds when complete
+
+[ ] APP STORE SUBMISSION (iOS)
+    1. Upload build to App Store Connect
+    2. Fill out app information
+    3. Add screenshots (iPhone 6.7", 6.5", 5.5")
+    4. Add app description and keywords
+    5. Set up in-app purchases
+    6. Submit for review
+    7. Wait for approval (typically 1-3 days)
+
+[ ] GOOGLE PLAY SUBMISSION (Android)
+    1. Upload build to Google Play Console
+    2. Fill out store listing
+    3. Add screenshots (phone and tablet)
+    4. Add app description
+    5. Set up in-app purchases
+    6. Submit for review
+    7. Wait for approval (typically 1-3 days)
+
+================================================================================
+POST-LAUNCH
+================================================================================
+
+[ ] Monitor RevenueCat Dashboard
+    - Track active subscriptions
+    - Monitor trial conversions
+    - Check for payment issues
+
+[ ] Monitor App Store Reviews
+    - Respond to user feedback
+    - Address bug reports
+    - Note feature requests
+
+[ ] Monitor Crash Reports
+    - Check Expo Dashboard for crashes
+    - Fix critical issues quickly
+    - Release updates as needed
+
+[ ] Marketing
+    - Share on social media
+    - Create landing page
+    - Submit to app directories
+    - Consider app review sites
+
+================================================================================
+TECHNICAL NOTES
+================================================================================
+
+Environment Variables:
+- All keys in .env must be replaced with real values
+- EXPO_PUBLIC_* variables are exposed to client-side code
+- Never commit real API keys to git (.env is in .gitignore)
+
+Free Tier Limits:
+- Max Plants: 10
+- Max Care Schedules: 5
+- History: 30 days
+- No cloud sync
+- No plant identification
+- No advanced analytics
+
+Premium Features:
+- Unlimited plants
+- Unlimited care schedules
+- Full history (365 days)
+- Cloud sync across devices
+- AI plant identification
+- Advanced growth analytics
+- Export data
+- Ad-free experience
+
+Trial Configuration:
+- 7-day free trial automatically detected from RevenueCat
+- Trial eligibility checked on subscription screen
+- Trial end date displayed during active trial
+- Users see "Start 7-Day Free Trial" CTA in onboarding
+
+Support:
+- For RevenueCat issues: https://docs.revenuecat.com
+- For Supabase issues: https://supabase.com/docs
+- For Expo issues: https://docs.expo.dev
+
+================================================================================
+IMPORTANT REMINDERS
+================================================================================
+
+1. Test the entire app flow on physical devices before submission
+2. Replace ALL placeholder API keys in .env before production build
+3. Design and publish paywall in RevenueCat dashboard before launch
+4. Create products in BOTH App Store Connect AND Google Play Console
+5. Test subscription purchase flow on TestFlight/Internal Testing
+6. Verify notifications work on physical devices (not simulator)
+7. Update privacy policy with actual data collection practices
+8. Set up customer support email for app store listings
+9. Keep RevenueCat dashboard credentials secure and backed up
+10. Monitor first week closely for crashes and critical bugs
+
+================================================================================
+CONTACT INFORMATION
+================================================================================
+
+Developer Support: [Your Email]
+App Support Email: [Support Email for App Store]
+RevenueCat Account: [Account Email]
+Supabase Account: [Account Email]
+
+================================================================================

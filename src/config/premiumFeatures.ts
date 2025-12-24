@@ -45,21 +45,25 @@ export const PREMIUM_FEATURES: PremiumFeature[] = [
 ];
 
 export const FREE_TIER_LIMITS = {
-  itemsPerDay: 5,
-  savedItems: 10,
-  historyDays: 7,
+  maxPlants: 10,
+  maxCareSchedules: 5,
+  historyDays: 30,
   exportEnabled: false,
   adsEnabled: true,
-  customizationEnabled: false,
+  cloudSync: false,
+  plantIdentification: false,
+  advancedAnalytics: false,
 };
 
 export const PREMIUM_TIER_LIMITS = {
-  itemsPerDay: Infinity,
-  savedItems: Infinity,
+  maxPlants: Infinity,
+  maxCareSchedules: Infinity,
   historyDays: 365,
   exportEnabled: true,
   adsEnabled: false,
-  customizationEnabled: true,
+  cloudSync: true,
+  plantIdentification: true,
+  advancedAnalytics: true,
 };
 
 export function getFeatureLimit(feature: keyof typeof FREE_TIER_LIMITS, isPremium: boolean) {
@@ -78,7 +82,46 @@ export function canAccessFeature(feature: string, isPremium: boolean): boolean {
     'analytics',
     'sync',
     'backup',
+    'identification',
   ];
 
   return !restrictedFeatures.some(r => feature.toLowerCase().includes(r));
+}
+
+// ============================================================================
+// PLANT-SPECIFIC HELPER FUNCTIONS
+// ============================================================================
+
+/**
+ * Check if plant limit is reached
+ */
+export function isPlantLimitReached(currentCount: number, isPremium: boolean): boolean {
+  if (isPremium) return false;
+  return currentCount >= FREE_TIER_LIMITS.maxPlants;
+}
+
+/**
+ * Get remaining plants count
+ */
+export function getRemainingPlants(currentCount: number, isPremium: boolean): number | 'unlimited' {
+  if (isPremium) return 'unlimited';
+  const remaining = FREE_TIER_LIMITS.maxPlants - currentCount;
+  return Math.max(0, remaining);
+}
+
+/**
+ * Check if care schedule limit is reached
+ */
+export function isCareScheduleLimitReached(currentCount: number, isPremium: boolean): boolean {
+  if (isPremium) return false;
+  return currentCount >= FREE_TIER_LIMITS.maxCareSchedules;
+}
+
+/**
+ * Get remaining care schedules count
+ */
+export function getRemainingCareSchedules(currentCount: number, isPremium: boolean): number | 'unlimited' {
+  if (isPremium) return 'unlimited';
+  const remaining = FREE_TIER_LIMITS.maxCareSchedules - currentCount;
+  return Math.max(0, remaining);
 }
