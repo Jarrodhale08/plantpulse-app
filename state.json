@@ -1,0 +1,1415 @@
+{
+  "id": "pipeline_1765047386358",
+  "startedAt": "2025-12-06T18:56:26.358Z",
+  "status": "failed",
+  "currentPhase": "security-audit",
+  "phases": [
+    {
+      "phase": "market-research",
+      "status": "completed",
+      "startedAt": "2025-12-06T18:56:26.367Z",
+      "completedAt": "2025-12-06T18:56:26.613Z",
+      "duration": 246
+    },
+    {
+      "phase": "design-system",
+      "status": "completed",
+      "startedAt": "2025-12-06T18:56:26.614Z",
+      "completedAt": "2025-12-06T19:01:18.491Z",
+      "duration": 291877
+    },
+    {
+      "phase": "code-generation",
+      "status": "completed",
+      "startedAt": "2025-12-06T19:01:18.494Z",
+      "completedAt": "2025-12-06T19:10:57.188Z",
+      "duration": 578694
+    },
+    {
+      "phase": "quality-assurance",
+      "status": "completed",
+      "startedAt": "2025-12-06T19:10:57.189Z",
+      "completedAt": "2025-12-06T19:11:03.600Z",
+      "duration": 6411
+    },
+    {
+      "phase": "security-audit",
+      "status": "completed",
+      "startedAt": "2025-12-06T19:11:03.601Z",
+      "completedAt": "2025-12-06T19:11:59.883Z",
+      "duration": 56282
+    },
+    {
+      "phase": "code-generation",
+      "status": "completed",
+      "startedAt": "2025-12-06T19:11:59.915Z",
+      "completedAt": "2025-12-06T19:23:21.224Z",
+      "duration": 681309
+    },
+    {
+      "phase": "quality-assurance",
+      "status": "completed",
+      "startedAt": "2025-12-06T19:23:21.224Z",
+      "completedAt": "2025-12-06T19:23:23.406Z",
+      "duration": 2182
+    },
+    {
+      "phase": "security-audit",
+      "status": "completed",
+      "startedAt": "2025-12-06T19:23:23.406Z",
+      "completedAt": "2025-12-06T19:23:55.914Z",
+      "duration": 32508
+    },
+    {
+      "phase": "code-generation",
+      "status": "completed",
+      "startedAt": "2025-12-06T19:23:55.934Z",
+      "completedAt": "2025-12-06T19:33:50.138Z",
+      "duration": 594204
+    },
+    {
+      "phase": "quality-assurance",
+      "status": "completed",
+      "startedAt": "2025-12-06T19:33:50.139Z",
+      "completedAt": "2025-12-06T19:33:54.759Z",
+      "duration": 4620
+    },
+    {
+      "phase": "security-audit",
+      "status": "completed",
+      "startedAt": "2025-12-06T19:33:54.760Z",
+      "completedAt": "2025-12-06T19:34:51.882Z",
+      "duration": 57122
+    },
+    {
+      "phase": "code-generation",
+      "status": "completed",
+      "startedAt": "2025-12-06T19:34:51.916Z",
+      "completedAt": "2025-12-06T19:45:40.984Z",
+      "duration": 649068
+    },
+    {
+      "phase": "quality-assurance",
+      "status": "completed",
+      "startedAt": "2025-12-06T19:45:40.985Z",
+      "completedAt": "2025-12-06T19:45:47.145Z",
+      "duration": 6160
+    },
+    {
+      "phase": "security-audit",
+      "status": "completed",
+      "startedAt": "2025-12-06T19:45:47.146Z",
+      "completedAt": "2025-12-06T19:46:37.410Z",
+      "duration": 50264
+    },
+    {
+      "phase": "code-generation",
+      "status": "completed",
+      "startedAt": "2025-12-06T19:46:37.446Z",
+      "completedAt": "2025-12-06T19:56:37.684Z",
+      "duration": 600238
+    },
+    {
+      "phase": "quality-assurance",
+      "status": "completed",
+      "startedAt": "2025-12-06T19:56:37.685Z",
+      "completedAt": "2025-12-06T19:56:42.038Z",
+      "duration": 4353
+    },
+    {
+      "phase": "security-audit",
+      "status": "completed",
+      "startedAt": "2025-12-06T19:56:42.038Z",
+      "completedAt": "2025-12-06T19:57:19.405Z",
+      "duration": 37367
+    }
+  ],
+  "errors": [
+    {
+      "phase": "quality-assurance",
+      "message": "TypeScript error in C:\\Projects\\NewAgent\\output\\app_1765047386358\\app\\customer-center.tsx:40: Remove console.log statements in production code",
+      "recoverable": true,
+      "timestamp": "2025-12-06T19:56:42.035Z"
+    },
+    {
+      "phase": "quality-assurance",
+      "message": "TypeScript error in C:\\Projects\\NewAgent\\output\\app_1765047386358\\app\\customer-center.tsx:43: Remove console.log statements in production code",
+      "recoverable": true,
+      "timestamp": "2025-12-06T19:56:42.035Z"
+    },
+    {
+      "phase": "quality-assurance",
+      "message": "TypeScript error in C:\\Projects\\NewAgent\\output\\app_1765047386358\\app\\customer-center.tsx:46: Remove console.log statements in production code",
+      "recoverable": true,
+      "timestamp": "2025-12-06T19:56:42.035Z"
+    },
+    {
+      "phase": "quality-assurance",
+      "message": "TypeScript error in C:\\Projects\\NewAgent\\output\\app_1765047386358\\app\\customer-center.tsx:49: Remove console.log statements in production code",
+      "recoverable": true,
+      "timestamp": "2025-12-06T19:56:42.035Z"
+    },
+    {
+      "phase": "quality-assurance",
+      "message": "TypeScript error in C:\\Projects\\NewAgent\\output\\app_1765047386358\\src\\services\\database.ts:23: Avoid using \"any\" type",
+      "recoverable": true,
+      "timestamp": "2025-12-06T19:56:42.036Z"
+    },
+    {
+      "phase": "quality-assurance",
+      "message": "TypeScript error in C:\\Projects\\NewAgent\\output\\app_1765047386358\\src\\services\\database.ts:311: Avoid using \"any\" type",
+      "recoverable": true,
+      "timestamp": "2025-12-06T19:56:42.036Z"
+    },
+    {
+      "phase": "quality-assurance",
+      "message": "TypeScript error in C:\\Projects\\NewAgent\\output\\app_1765047386358\\src\\services\\revenueCat.service.ts:30: Remove console.log statements in production code",
+      "recoverable": true,
+      "timestamp": "2025-12-06T19:56:42.036Z"
+    },
+    {
+      "phase": "quality-assurance",
+      "message": "TypeScript error in C:\\Projects\\NewAgent\\output\\app_1765047386358\\src\\services\\revenueCat.service.ts:44: Remove console.log statements in production code",
+      "recoverable": true,
+      "timestamp": "2025-12-06T19:56:42.036Z"
+    },
+    {
+      "phase": "quality-assurance",
+      "message": "TypeScript error in C:\\Projects\\NewAgent\\output\\app_1765047386358\\src\\services\\revenueCat.service.ts:195: Remove console.log statements in production code",
+      "recoverable": true,
+      "timestamp": "2025-12-06T19:56:42.036Z"
+    },
+    {
+      "phase": "quality-assurance",
+      "message": "TypeScript error in C:\\Projects\\NewAgent\\output\\app_1765047386358\\src\\services\\revenueCat.service.ts:210: Remove console.log statements in production code",
+      "recoverable": true,
+      "timestamp": "2025-12-06T19:56:42.036Z"
+    },
+    {
+      "phase": "quality-assurance",
+      "message": "TypeScript error in C:\\Projects\\NewAgent\\output\\app_1765047386358\\src\\stores\\authStore.ts:84: Remove console.log statements in production code",
+      "recoverable": true,
+      "timestamp": "2025-12-06T19:56:42.036Z"
+    },
+    {
+      "phase": "security-audit",
+      "message": "SECURITY [critical]: Hardcoded API Keys in RevenueCat Service in src/services/revenueCat.service.ts:15 - FIX: Replace hardcoded API key with environment variable: const REVENUECAT_API_KEY = process.env.EXPO_PUBLIC_REVENUECAT_API_KEY; and add proper validation to ensure it's configured.",
+      "recoverable": true,
+      "timestamp": "2025-12-06T19:57:19.401Z"
+    },
+    {
+      "phase": "security-audit",
+      "message": "SECURITY [critical]: Hardcoded Supabase Credentials in src/services/supabase.ts:22 - FIX: Use environment variables: const SUPABASE_URL = process.env.EXPO_PUBLIC_SUPABASE_URL; const SUPABASE_ANON_KEY = process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY; with proper validation.",
+      "recoverable": true,
+      "timestamp": "2025-12-06T19:57:19.401Z"
+    },
+    {
+      "phase": "security-audit",
+      "message": "SECURITY [high]: Sensitive User Data Stored in AsyncStorage in src/stores/appStore.ts:122 - FIX: Use expo-secure-store for sensitive health data, or implement encryption layer before storing in AsyncStorage. Consider storing only non-sensitive UI state in AsyncStorage and fetching sensitive data from secure backend.",
+      "recoverable": true,
+      "timestamp": "2025-12-06T19:57:19.401Z"
+    },
+    {
+      "phase": "security-audit",
+      "message": "SECURITY [high]: Insufficient Input Validation on Authentication in src/services/api.service.ts:196 - FIX: Implement proper input validation: validate email format with regex, enforce password complexity requirements, sanitize all inputs, and add rate limiting for authentication endpoints.",
+      "recoverable": true,
+      "timestamp": "2025-12-06T19:57:19.401Z"
+    },
+    {
+      "phase": "security-audit",
+      "message": "SECURITY [high]: Missing Token Expiration Validation in src/services/api.service.ts:129 - FIX: Implement token expiration checking before attaching to requests. Store token expiration time and validate before use. Implement automatic token refresh logic when token is near expiration.",
+      "recoverable": true,
+      "timestamp": "2025-12-06T19:57:19.401Z"
+    }
+  ],
+  "outputPath": "C:\\Projects\\NewAgent\\output\\app_1765047386358",
+  "marketResearch": {
+    "appConcept": {
+      "name": "PlantPulse",
+      "tagline": "Never kill another houseplant",
+      "description": "Smart plant care companion that uses your phone camera to identify plant health issues, provides watering schedules based on your local weather, and connects you with a community of plant enthusiasts.",
+      "category": "pet-care",
+      "subcategory": "Plant Care",
+      "keywords": [
+        "plants",
+        "gardening",
+        "plant-care",
+        "houseplants",
+        "watering"
+      ],
+      "uniqueValueProposition": "Solves: People struggle to keep houseplants alive due to inconsistent care. Never kill another houseplant",
+      "targetAudience": {
+        "demographics": {
+          "ageRange": "25-45",
+          "gender": "all",
+          "income": "medium",
+          "location": [
+            "United States",
+            "Europe"
+          ]
+        },
+        "psychographics": {
+          "interests": [
+            "plants",
+            "gardening"
+          ],
+          "painPoints": [
+            "People struggle to keep houseplants alive due to inconsistent care"
+          ],
+          "goals": [
+            "Solve the problem",
+            "Better experience"
+          ]
+        },
+        "marketSize": {
+          "tam": 50000000,
+          "sam": 10000000,
+          "som": 500000
+        }
+      },
+      "coreFeatures": [
+        {
+          "name": "Pet Profiles",
+          "description": "Create profiles for your pets",
+          "priority": "must-have",
+          "complexity": "medium",
+          "screens": [
+            "PetScreen",
+            "EditPetScreen"
+          ],
+          "dataRequirements": [
+            "pets"
+          ]
+        },
+        {
+          "name": "Health Tracking",
+          "description": "Track vet visits, medications, and health",
+          "priority": "must-have",
+          "complexity": "medium",
+          "screens": [
+            "HealthScreen",
+            "AddRecordScreen"
+          ],
+          "dataRequirements": [
+            "health_records"
+          ]
+        },
+        {
+          "name": "Reminders",
+          "description": "Medication and appointment reminders",
+          "priority": "must-have",
+          "complexity": "low",
+          "screens": [
+            "RemindersScreen"
+          ],
+          "dataRequirements": [
+            "reminders"
+          ]
+        },
+        {
+          "name": "Care Tips",
+          "description": "Species-specific care advice",
+          "priority": "should-have",
+          "complexity": "low",
+          "screens": [
+            "TipsScreen"
+          ],
+          "dataRequirements": [
+            "tips"
+          ]
+        }
+      ],
+      "premiumFeatures": [
+        {
+          "name": "Premium Support",
+          "description": "Priority customer support",
+          "priority": "nice-to-have",
+          "complexity": "low",
+          "screens": [
+            "SupportScreen"
+          ],
+          "dataRequirements": [
+            "support_tickets"
+          ]
+        },
+        {
+          "name": "Ad-Free Experience",
+          "description": "Remove all advertisements",
+          "priority": "nice-to-have",
+          "complexity": "low",
+          "screens": [],
+          "dataRequirements": []
+        },
+        {
+          "name": "Cloud Backup",
+          "description": "Automatic cloud backup and sync",
+          "priority": "nice-to-have",
+          "complexity": "medium",
+          "screens": [
+            "BackupScreen"
+          ],
+          "dataRequirements": [
+            "backups"
+          ]
+        }
+      ]
+    },
+    "marketAnalysis": {
+      "trendScore": 84,
+      "demandIndicators": [
+        "Growing interest in pet-care apps",
+        "Users seeking solutions for: People struggle to keep houseplants alive due to inconsistent care",
+        "Increasing mobile-first behavior",
+        "Strong willingness to pay for quality apps"
+      ],
+      "seasonality": "low",
+      "growthPotential": "growing",
+      "barriers": [
+        "Established competitors",
+        "User acquisition costs",
+        "App store discoverability"
+      ],
+      "opportunities": [
+        "Underserved niche",
+        "Better UX than competitors",
+        "Mobile-native approach",
+        "Subscription model viability"
+      ]
+    },
+    "competitorAnalysis": {
+      "directCompetitors": [
+        {
+          "name": "Generic Competitor 1",
+          "downloads": "1M+",
+          "rating": 4.2,
+          "pricing": "Freemium",
+          "strengths": [
+            "Established user base",
+            "Feature rich"
+          ],
+          "weaknesses": [
+            "Complicated UI",
+            "Expensive premium"
+          ]
+        },
+        {
+          "name": "Generic Competitor 2",
+          "downloads": "500K+",
+          "rating": 4,
+          "pricing": "Free with ads",
+          "strengths": [
+            "Free tier",
+            "Simple"
+          ],
+          "weaknesses": [
+            "Limited features",
+            "Ads are intrusive"
+          ]
+        }
+      ],
+      "indirectCompetitors": [
+        {
+          "name": "Alternative Solution",
+          "downloads": "2M+",
+          "rating": 4.3,
+          "pricing": "Subscription",
+          "strengths": [
+            "Well-known brand"
+          ],
+          "weaknesses": [
+            "Not mobile-focused",
+            "Expensive"
+          ]
+        }
+      ],
+      "marketGaps": [
+        "Specific focus on: People struggle to keep houseplants alive due to inconsistent care",
+        "Modern, clean user interface",
+        "Fair pricing for value provided",
+        "Privacy-respecting approach"
+      ],
+      "differentiators": [
+        "Never kill another houseplant",
+        "Purpose-built for mobile",
+        "User-centric design",
+        "Transparent pricing"
+      ]
+    },
+    "revenueProjection": {
+      "model": "freemium",
+      "pricing": {
+        "freeTier": true,
+        "premiumPrice": 6.99,
+        "subscriptionTiers": [
+          {
+            "name": "Free",
+            "price": 0,
+            "interval": "monthly",
+            "features": [
+              "Basic features",
+              "Limited usage"
+            ]
+          },
+          {
+            "name": "Pro",
+            "price": 6.99,
+            "interval": "monthly",
+            "features": [
+              "All features",
+              "No ads",
+              "Cloud sync"
+            ]
+          },
+          {
+            "name": "Pro Annual",
+            "price": 49.99,
+            "interval": "yearly",
+            "features": [
+              "All Pro features",
+              "40% savings"
+            ]
+          }
+        ]
+      },
+      "projectedMRR": 26304,
+      "projectedARR": 475108,
+      "breakEvenMonths": 11,
+      "assumptions": [
+        "3% free-to-paid conversion",
+        "5% monthly churn",
+        "Organic growth via ASO",
+        "Word-of-mouth referrals"
+      ]
+    },
+    "technicalRequirements": {
+      "platforms": [
+        "ios",
+        "android"
+      ],
+      "minimumOS": {
+        "ios": "14.0",
+        "android": "10.0"
+      },
+      "permissions": [
+        "INTERNET",
+        "NOTIFICATIONS"
+      ],
+      "thirdPartyServices": [
+        {
+          "name": "Firebase",
+          "purpose": "Authentication and analytics",
+          "required": true,
+          "alternatives": [
+            "Supabase"
+          ]
+        },
+        {
+          "name": "RevenueCat",
+          "purpose": "Subscription management",
+          "required": false,
+          "alternatives": [
+            "Stripe"
+          ]
+        }
+      ],
+      "dataStorage": "hybrid",
+      "offlineSupport": true,
+      "pushNotifications": true
+    }
+  },
+  "designSystem": {
+    "brand": {
+      "personality": [
+        "caring",
+        "playful",
+        "trustworthy"
+      ],
+      "tone": "professional",
+      "visualStyle": "modern"
+    },
+    "colors": {
+      "primary": {
+        "50": "#FEFAF2",
+        "100": "#FEF5E6",
+        "200": "#FCE6C2",
+        "300": "#FBD89D",
+        "400": "#F8BB54",
+        "500": "#F59E0B",
+        "600": "#DC8E09",
+        "700": "#C47E08",
+        "800": "#AB6E07",
+        "900": "#935E06"
+      },
+      "secondary": {
+        "50": "#F7F7F8",
+        "100": "#F0F0F2",
+        "200": "#DADBDF",
+        "300": "#C3C6CC",
+        "400": "#979CA6",
+        "500": "#6B7280",
+        "600": "#606673",
+        "700": "#555B66",
+        "800": "#4A4F59",
+        "900": "#40444C"
+      },
+      "accent": {
+        "50": "#FDF8F2",
+        "100": "#FBF1E6",
+        "200": "#F5DDC0",
+        "300": "#EFC89B",
+        "400": "#E49F50",
+        "500": "#D97706",
+        "600": "#C36B05",
+        "700": "#AD5F04",
+        "800": "#975304",
+        "900": "#824703"
+      },
+      "neutral": {
+        "50": "#FAFAFA",
+        "100": "#F5F5F5",
+        "200": "#E5E5E5",
+        "300": "#D4D4D4",
+        "400": "#A3A3A3",
+        "500": "#737373",
+        "600": "#525252",
+        "700": "#404040",
+        "800": "#262626",
+        "900": "#171717"
+      },
+      "semantic": {
+        "success": "#10B981",
+        "warning": "#F59E0B",
+        "error": "#EF4444",
+        "info": "#3B82F6"
+      },
+      "gradients": [
+        {
+          "name": "primary",
+          "colors": [
+            "#F59E0B",
+            "#D97706"
+          ],
+          "direction": "to bottom right"
+        }
+      ]
+    },
+    "typography": {
+      "fontFamily": {
+        "heading": "System",
+        "body": "System",
+        "mono": "Courier"
+      },
+      "scale": {
+        "h1": {
+          "fontSize": 32,
+          "lineHeight": 40,
+          "fontWeight": "700"
+        },
+        "h2": {
+          "fontSize": 24,
+          "lineHeight": 32,
+          "fontWeight": "600"
+        },
+        "h3": {
+          "fontSize": 20,
+          "lineHeight": 28,
+          "fontWeight": "600"
+        },
+        "h4": {
+          "fontSize": 18,
+          "lineHeight": 24,
+          "fontWeight": "500"
+        },
+        "body": {
+          "fontSize": 16,
+          "lineHeight": 24,
+          "fontWeight": "400"
+        },
+        "bodySmall": {
+          "fontSize": 14,
+          "lineHeight": 20,
+          "fontWeight": "400"
+        },
+        "caption": {
+          "fontSize": 12,
+          "lineHeight": 16,
+          "fontWeight": "400"
+        },
+        "button": {
+          "fontSize": 16,
+          "lineHeight": 24,
+          "fontWeight": "600"
+        }
+      }
+    },
+    "spacing": {
+      "base": 4,
+      "scale": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        32,
+        40,
+        48,
+        64
+      ]
+    },
+    "components": {
+      "buttons": {
+        "variants": [
+          "primary",
+          "secondary",
+          "outline",
+          "ghost",
+          "danger"
+        ],
+        "sizes": [
+          "sm",
+          "md",
+          "lg"
+        ],
+        "states": [
+          "default",
+          "hover",
+          "active",
+          "disabled",
+          "loading"
+        ]
+      },
+      "inputs": {
+        "variants": [
+          "default",
+          "filled",
+          "outlined"
+        ],
+        "sizes": [
+          "sm",
+          "md",
+          "lg"
+        ],
+        "states": [
+          "default",
+          "focus",
+          "error",
+          "disabled"
+        ]
+      },
+      "cards": {
+        "variants": [
+          "default",
+          "elevated",
+          "outlined",
+          "interactive"
+        ],
+        "sizes": [
+          "sm",
+          "md",
+          "lg"
+        ],
+        "states": [
+          "default",
+          "hover",
+          "selected"
+        ]
+      },
+      "lists": {
+        "variants": [
+          "default",
+          "compact",
+          "detailed"
+        ],
+        "sizes": [
+          "sm",
+          "md",
+          "lg"
+        ],
+        "states": [
+          "default",
+          "empty",
+          "loading"
+        ]
+      },
+      "modals": {
+        "variants": [
+          "default",
+          "fullscreen",
+          "bottom-sheet"
+        ],
+        "sizes": [
+          "sm",
+          "md",
+          "lg",
+          "full"
+        ],
+        "states": [
+          "open",
+          "closed"
+        ]
+      },
+      "navigation": {
+        "variants": [
+          "tabs",
+          "drawer",
+          "stack"
+        ],
+        "sizes": [
+          "default"
+        ],
+        "states": [
+          "active",
+          "inactive"
+        ]
+      },
+      "feedback": {
+        "variants": [
+          "toast",
+          "alert",
+          "snackbar",
+          "badge"
+        ],
+        "sizes": [
+          "sm",
+          "md"
+        ],
+        "states": [
+          "success",
+          "warning",
+          "error",
+          "info"
+        ]
+      }
+    },
+    "screens": [
+      {
+        "name": "Home",
+        "route": "/(tabs)/index",
+        "layout": "scroll",
+        "components": [
+          {
+            "type": "Header",
+            "variant": "default",
+            "props": {
+              "title": "PlantPulse"
+            },
+            "position": {
+              "x": 0,
+              "y": 0,
+              "width": "100%",
+              "height": "60"
+            }
+          },
+          {
+            "type": "Card",
+            "variant": "elevated",
+            "props": {
+              "title": "Welcome"
+            },
+            "position": {
+              "x": 16,
+              "y": 80,
+              "width": "calc(100% - 32px)",
+              "height": "auto"
+            }
+          }
+        ],
+        "interactions": [
+          {
+            "trigger": "onPress",
+            "action": "navigate",
+            "target": "/details"
+          }
+        ],
+        "dataBindings": [
+          {
+            "component": "Card",
+            "property": "data",
+            "source": "homeData"
+          }
+        ]
+      },
+      {
+        "name": "Profile",
+        "route": "/(tabs)/profile",
+        "layout": "scroll",
+        "components": [
+          {
+            "type": "Avatar",
+            "variant": "large",
+            "props": {},
+            "position": {
+              "x": 0,
+              "y": 0,
+              "width": "100",
+              "height": "100"
+            }
+          },
+          {
+            "type": "Form",
+            "variant": "default",
+            "props": {
+              "fields": [
+                "name",
+                "email",
+                "bio"
+              ]
+            },
+            "position": {
+              "x": 16,
+              "y": 120,
+              "width": "calc(100% - 32px)",
+              "height": "auto"
+            }
+          }
+        ],
+        "interactions": [
+          {
+            "trigger": "onSubmit",
+            "action": "updateProfile",
+            "target": "profileStore"
+          }
+        ],
+        "dataBindings": [
+          {
+            "component": "Avatar",
+            "property": "src",
+            "source": "user.avatar"
+          },
+          {
+            "component": "Form",
+            "property": "values",
+            "source": "user"
+          }
+        ]
+      },
+      {
+        "name": "Settings",
+        "route": "/(tabs)/settings",
+        "layout": "scroll",
+        "components": [
+          {
+            "type": "List",
+            "variant": "default",
+            "props": {
+              "items": [
+                "Notifications",
+                "Privacy",
+                "Theme",
+                "Help"
+              ]
+            },
+            "position": {
+              "x": 0,
+              "y": 0,
+              "width": "100%",
+              "height": "auto"
+            }
+          }
+        ],
+        "interactions": [
+          {
+            "trigger": "onPress",
+            "action": "navigate",
+            "target": "/settings/:item"
+          }
+        ],
+        "dataBindings": [
+          {
+            "component": "List",
+            "property": "items",
+            "source": "settingsItems"
+          }
+        ]
+      }
+    ],
+    "animations": {
+      "transitions": {
+        "duration": {
+          "fast": 150,
+          "normal": 300,
+          "slow": 500
+        },
+        "easing": {
+          "standard": "cubic-bezier(0.4, 0, 0.2, 1)",
+          "accelerate": "cubic-bezier(0.4, 0, 1, 1)",
+          "decelerate": "cubic-bezier(0, 0, 0.2, 1)"
+        }
+      },
+      "microInteractions": [
+        {
+          "name": "buttonPress",
+          "trigger": "onPressIn",
+          "animation": "scale(0.98)",
+          "duration": 100
+        },
+        {
+          "name": "cardHover",
+          "trigger": "onHoverIn",
+          "animation": "translateY(-2px)",
+          "duration": 200
+        },
+        {
+          "name": "fadeIn",
+          "trigger": "onMount",
+          "animation": "opacity 0->1",
+          "duration": 300
+        }
+      ]
+    },
+    "accessibility": {
+      "wcagLevel": "AA",
+      "colorContrast": {
+        "normal": 4.5,
+        "large": 3
+      },
+      "touchTargetSize": 44,
+      "screenReaderSupport": true,
+      "reduceMotionSupport": true
+    }
+  },
+  "qualityReport": {
+    "typescript": {
+      "passed": false,
+      "errors": [
+        {
+          "file": "C:\\Projects\\NewAgent\\output\\app_1765047386358\\app\\customer-center.tsx",
+          "line": 40,
+          "column": 12,
+          "message": "Remove console.log statements in production code",
+          "severity": "warning"
+        },
+        {
+          "file": "C:\\Projects\\NewAgent\\output\\app_1765047386358\\app\\customer-center.tsx",
+          "line": 43,
+          "column": 12,
+          "message": "Remove console.log statements in production code",
+          "severity": "warning"
+        },
+        {
+          "file": "C:\\Projects\\NewAgent\\output\\app_1765047386358\\app\\customer-center.tsx",
+          "line": 46,
+          "column": 12,
+          "message": "Remove console.log statements in production code",
+          "severity": "warning"
+        },
+        {
+          "file": "C:\\Projects\\NewAgent\\output\\app_1765047386358\\app\\customer-center.tsx",
+          "line": 49,
+          "column": 12,
+          "message": "Remove console.log statements in production code",
+          "severity": "warning"
+        },
+        {
+          "file": "C:\\Projects\\NewAgent\\output\\app_1765047386358\\src\\services\\database.ts",
+          "line": 23,
+          "column": 11,
+          "message": "Avoid using \"any\" type",
+          "severity": "warning"
+        },
+        {
+          "file": "C:\\Projects\\NewAgent\\output\\app_1765047386358\\src\\services\\database.ts",
+          "line": 311,
+          "column": 28,
+          "message": "Avoid using \"any\" type",
+          "severity": "warning"
+        },
+        {
+          "file": "C:\\Projects\\NewAgent\\output\\app_1765047386358\\src\\services\\revenueCat.service.ts",
+          "line": 30,
+          "column": 4,
+          "message": "Remove console.log statements in production code",
+          "severity": "warning"
+        },
+        {
+          "file": "C:\\Projects\\NewAgent\\output\\app_1765047386358\\src\\services\\revenueCat.service.ts",
+          "line": 44,
+          "column": 4,
+          "message": "Remove console.log statements in production code",
+          "severity": "warning"
+        },
+        {
+          "file": "C:\\Projects\\NewAgent\\output\\app_1765047386358\\src\\services\\revenueCat.service.ts",
+          "line": 195,
+          "column": 4,
+          "message": "Remove console.log statements in production code",
+          "severity": "warning"
+        },
+        {
+          "file": "C:\\Projects\\NewAgent\\output\\app_1765047386358\\src\\services\\revenueCat.service.ts",
+          "line": 210,
+          "column": 4,
+          "message": "Remove console.log statements in production code",
+          "severity": "warning"
+        },
+        {
+          "file": "C:\\Projects\\NewAgent\\output\\app_1765047386358\\src\\stores\\authStore.ts",
+          "line": 84,
+          "column": 14,
+          "message": "Remove console.log statements in production code",
+          "severity": "warning"
+        }
+      ],
+      "warnings": []
+    },
+    "unitTests": {
+      "total": 268,
+      "passed": 268,
+      "failed": 0,
+      "skipped": 0,
+      "coverage": 100,
+      "duration": 0,
+      "failures": []
+    },
+    "integrationTests": {
+      "total": 0,
+      "passed": 0,
+      "failed": 0,
+      "skipped": 0,
+      "coverage": 0,
+      "duration": 0,
+      "failures": []
+    },
+    "e2eTests": {
+      "total": 0,
+      "passed": 0,
+      "failed": 0,
+      "skipped": 0,
+      "coverage": 0,
+      "duration": 0,
+      "failures": []
+    },
+    "performance": {
+      "bundleSize": 88160,
+      "startupTime": 588,
+      "memoryUsage": 220400,
+      "renderTime": {}
+    },
+    "accessibility": {
+      "score": 100,
+      "violations": [],
+      "warnings": []
+    },
+    "codeQuality": {
+      "lintErrors": 0,
+      "lintWarnings": 13,
+      "complexity": 5,
+      "duplication": 0,
+      "maintainability": 78
+    }
+  },
+  "securityAudit": {
+    "overallRisk": "critical",
+    "score": 0,
+    "vulnerabilities": [
+      {
+        "id": "VULN-1",
+        "category": "extraneous-functionality",
+        "severity": "low",
+        "title": "Debug logging in production code",
+        "description": "Found: \"console.log(\"",
+        "file": "app\\customer-center.tsx",
+        "line": 40,
+        "cwe": "CWE-489",
+        "fix": "Remove debug code and console.log statements for production",
+        "verified": false
+      },
+      {
+        "id": "VULN-2",
+        "category": "extraneous-functionality",
+        "severity": "low",
+        "title": "Debug logging in production code",
+        "description": "Found: \"console.log(\"",
+        "file": "app\\customer-center.tsx",
+        "line": 43,
+        "cwe": "CWE-489",
+        "fix": "Remove debug code and console.log statements for production",
+        "verified": false
+      },
+      {
+        "id": "VULN-3",
+        "category": "extraneous-functionality",
+        "severity": "low",
+        "title": "Debug logging in production code",
+        "description": "Found: \"console.log(\"",
+        "file": "app\\customer-center.tsx",
+        "line": 46,
+        "cwe": "CWE-489",
+        "fix": "Remove debug code and console.log statements for production",
+        "verified": false
+      },
+      {
+        "id": "VULN-4",
+        "category": "extraneous-functionality",
+        "severity": "low",
+        "title": "Debug logging in production code",
+        "description": "Found: \"console.log(\"",
+        "file": "app\\customer-center.tsx",
+        "line": 49,
+        "cwe": "CWE-489",
+        "fix": "Remove debug code and console.log statements for production",
+        "verified": false
+      },
+      {
+        "id": "VULN-5",
+        "category": "extraneous-functionality",
+        "severity": "low",
+        "title": "Debug logging in production code",
+        "description": "Found: \"console.log(\"",
+        "file": "src\\services\\revenueCat.service.ts",
+        "line": 30,
+        "cwe": "CWE-489",
+        "fix": "Remove debug code and console.log statements for production",
+        "verified": false
+      },
+      {
+        "id": "VULN-6",
+        "category": "extraneous-functionality",
+        "severity": "low",
+        "title": "Debug logging in production code",
+        "description": "Found: \"console.log(\"",
+        "file": "src\\services\\revenueCat.service.ts",
+        "line": 44,
+        "cwe": "CWE-489",
+        "fix": "Remove debug code and console.log statements for production",
+        "verified": false
+      },
+      {
+        "id": "VULN-7",
+        "category": "extraneous-functionality",
+        "severity": "low",
+        "title": "Debug logging in production code",
+        "description": "Found: \"console.log(\"",
+        "file": "src\\services\\revenueCat.service.ts",
+        "line": 195,
+        "cwe": "CWE-489",
+        "fix": "Remove debug code and console.log statements for production",
+        "verified": false
+      },
+      {
+        "id": "VULN-8",
+        "category": "extraneous-functionality",
+        "severity": "low",
+        "title": "Debug logging in production code",
+        "description": "Found: \"console.log(\"",
+        "file": "src\\services\\revenueCat.service.ts",
+        "line": 210,
+        "cwe": "CWE-489",
+        "fix": "Remove debug code and console.log statements for production",
+        "verified": false
+      },
+      {
+        "id": "VULN-9",
+        "category": "extraneous-functionality",
+        "severity": "low",
+        "title": "Debug logging in production code",
+        "description": "Found: \"console.log(\"",
+        "file": "src\\stores\\authStore.ts",
+        "line": 84,
+        "cwe": "CWE-489",
+        "fix": "Remove debug code and console.log statements for production",
+        "verified": false
+      },
+      {
+        "id": "VULN-10",
+        "category": "extraneous-functionality",
+        "severity": "low",
+        "title": "TODO/FIXME comment (incomplete implementation)",
+        "description": "Found: \"// TODO\"",
+        "file": "src\\utils\\helpers.ts",
+        "line": 1,
+        "cwe": "CWE-489",
+        "fix": "Remove debug code and console.log statements for production",
+        "verified": false
+      },
+      {
+        "severity": "critical",
+        "title": "Hardcoded API Keys in RevenueCat Service",
+        "description": "The RevenueCat API key is hardcoded as 'YOUR_REVENUECAT_API_KEY' in the source code. This placeholder should be replaced with environment variables. Hardcoded API keys can be extracted from the application bundle and used maliciously.",
+        "file": "src/services/revenueCat.service.ts",
+        "line": 15,
+        "cwe": "CWE-798",
+        "fix": "Replace hardcoded API key with environment variable: const REVENUECAT_API_KEY = process.env.EXPO_PUBLIC_REVENUECAT_API_KEY; and add proper validation to ensure it's configured.",
+        "id": "AI-1",
+        "category": "code-quality",
+        "verified": false
+      },
+      {
+        "severity": "critical",
+        "title": "Hardcoded Supabase Credentials",
+        "description": "Supabase URL and anon key are hardcoded as placeholder strings 'YOUR_SUPABASE_URL' and 'YOUR_SUPABASE_ANON_KEY'. While these are placeholders, the pattern encourages hardcoding credentials in source code rather than using environment variables.",
+        "file": "src/services/supabase.ts",
+        "line": 22,
+        "cwe": "CWE-798",
+        "fix": "Use environment variables: const SUPABASE_URL = process.env.EXPO_PUBLIC_SUPABASE_URL; const SUPABASE_ANON_KEY = process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY; with proper validation.",
+        "id": "AI-2",
+        "category": "code-quality",
+        "verified": false
+      },
+      {
+        "severity": "high",
+        "title": "Sensitive User Data Stored in AsyncStorage",
+        "description": "The appStore persists sensitive user data including health records, medication details, and pet profiles in AsyncStorage (unencrypted). AsyncStorage data can be accessed by other apps on rooted/jailbroken devices or through device backups.",
+        "file": "src/stores/appStore.ts",
+        "line": 122,
+        "cwe": "CWE-312",
+        "fix": "Use expo-secure-store for sensitive health data, or implement encryption layer before storing in AsyncStorage. Consider storing only non-sensitive UI state in AsyncStorage and fetching sensitive data from secure backend.",
+        "id": "AI-3",
+        "category": "insecure-storage",
+        "verified": false
+      },
+      {
+        "severity": "high",
+        "title": "Insufficient Input Validation on Authentication",
+        "description": "The login and register methods only perform basic string trimming and length limiting (slice(0, 255)) but lack comprehensive input validation. No email format validation, password strength requirements, or sanitization against injection attacks.",
+        "file": "src/services/api.service.ts",
+        "line": 196,
+        "cwe": "CWE-20",
+        "fix": "Implement proper input validation: validate email format with regex, enforce password complexity requirements, sanitize all inputs, and add rate limiting for authentication endpoints.",
+        "id": "AI-4",
+        "category": "broken-auth",
+        "verified": false
+      },
+      {
+        "severity": "high",
+        "title": "Missing Token Expiration Validation",
+        "description": "The API service retrieves tokens from SecureStore and attaches them to requests without validating if they are expired. This can lead to unnecessary failed requests and potential security issues if expired tokens are reused.",
+        "file": "src/services/api.service.ts",
+        "line": 129,
+        "cwe": "CWE-613",
+        "fix": "Implement token expiration checking before attaching to requests. Store token expiration time and validate before use. Implement automatic token refresh logic when token is near expiration.",
+        "id": "AI-5",
+        "category": "broken-auth",
+        "verified": false
+      },
+      {
+        "severity": "medium",
+        "title": "Missing CSRF Protection for State-Changing Operations",
+        "description": "The API service performs state-changing operations (POST, PUT, DELETE) without CSRF token protection. While using Bearer tokens provides some protection, additional CSRF tokens should be implemented for state-changing operations.",
+        "file": "src/services/api.service.ts",
+        "line": 158,
+        "cwe": "CWE-352",
+        "fix": "Implement CSRF token generation and validation for all state-changing requests. Add CSRF token to request headers and validate on backend.",
+        "id": "AI-6",
+        "category": "code-quality",
+        "verified": false
+      },
+      {
+        "severity": "medium",
+        "title": "Insufficient Query Parameter Sanitization",
+        "description": "The getCareTips method performs basic trimming and length limiting on query parameters but doesn't sanitize against injection attacks or validate allowed characters. URLSearchParams doesn't automatically protect against all injection vectors.",
+        "file": "src/services/api.service.ts",
+        "line": 361,
+        "cwe": "CWE-20",
+        "fix": "Implement comprehensive input sanitization: validate parameters against whitelist of allowed characters, encode special characters, and validate parameter values match expected patterns.",
+        "id": "AI-7",
+        "category": "code-quality",
+        "verified": false
+      },
+      {
+        "severity": "medium",
+        "title": "Insecure File Upload Without Type Validation",
+        "description": "The uploadPetPhoto method accepts any photoUri without validating the file type, size, or content. It hardcodes the MIME type as 'image/jpeg' regardless of actual file type, which could allow malicious file uploads.",
+        "file": "src/services/api.service.ts",
+        "line": 413,
+        "cwe": "CWE-434",
+        "fix": "Implement proper file validation: check actual file MIME type, validate file size limits, verify file extension matches content, and scan for malicious content before upload.",
+        "id": "AI-8",
+        "category": "code-quality",
+        "verified": false
+      },
+      {
+        "severity": "medium",
+        "title": "Sensitive Session Data in AsyncStorage",
+        "description": "The subscription store persists subscription status in AsyncStorage which is unencrypted. While less sensitive than credentials, subscription entitlement status could be manipulated on compromised devices.",
+        "file": "src/stores/subscriptionStore.ts",
+        "line": 145,
+        "cwe": "CWE-312",
+        "fix": "Store subscription entitlements server-side and validate on each request. Only cache non-critical UI state locally. Implement integrity checks if local caching is necessary.",
+        "id": "AI-9",
+        "category": "insecure-storage",
+        "verified": false
+      },
+      {
+        "severity": "low",
+        "title": "Generic Error Messages Expose Internal State",
+        "description": "The handleError method in ApiService throws error messages directly from the server response without sanitization. This could leak sensitive information about backend implementation, database structure, or validation rules.",
+        "file": "src/services/api.service.ts",
+        "line": 154,
+        "cwe": "CWE-209",
+        "fix": "Implement error message mapping that translates technical errors to user-friendly messages. Log detailed errors server-side but return generic messages to client. Never expose stack traces or internal paths.",
+        "id": "AI-10",
+        "category": "code-quality",
+        "verified": false
+      }
+    ],
+    "compliance": [
+      {
+        "standard": "OWASP-M2",
+        "requirement": "Secure data storage with encryption",
+        "status": "pass",
+        "notes": "SecureStore detected for sensitive data"
+      },
+      {
+        "standard": "OWASP-M3",
+        "requirement": "HTTPS-only communication",
+        "status": "pass",
+        "notes": "All network calls use HTTPS"
+      },
+      {
+        "standard": "OWASP-M4",
+        "requirement": "Secure authentication implementation",
+        "status": "pass",
+        "notes": "Authentication handling detected"
+      },
+      {
+        "standard": "OWASP-M7",
+        "requirement": "Input validation and sanitization",
+        "status": "pass",
+        "notes": "Input validation libraries detected"
+      },
+      {
+        "standard": "OWASP-M7",
+        "requirement": "Proper error handling",
+        "status": "pass",
+        "notes": "Error handling implemented"
+      }
+    ],
+    "recommendations": [
+      {
+        "priority": "low",
+        "category": "extraneous-functionality",
+        "recommendation": "Remove debug code before release",
+        "implementation": "Remove console.log, debugger statements, and test code from production builds"
+      },
+      {
+        "priority": "high",
+        "category": "code-quality",
+        "recommendation": "Remove dangerous code patterns",
+        "implementation": "Eliminate eval(), innerHTML, and dynamic code execution"
+      },
+      {
+        "priority": "high",
+        "category": "insecure-storage",
+        "recommendation": "Encrypt sensitive data at rest",
+        "implementation": "Use SecureStore with encryption for sensitive data persistence"
+      },
+      {
+        "priority": "critical",
+        "category": "broken-auth",
+        "recommendation": "Remove all hardcoded credentials",
+        "implementation": "Use environment variables and secure vaults for secrets"
+      },
+      {
+        "priority": "medium",
+        "category": "general",
+        "recommendation": "Implement security headers for all API requests",
+        "implementation": "Add security headers in axios interceptors (X-Content-Type-Options, X-Frame-Options, etc.)"
+      }
+    ]
+  },
+  "iteration": 5,
+  "completedAt": "2025-12-06T19:57:19.452Z"
+}

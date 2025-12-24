@@ -1,0 +1,176 @@
+[2025-12-06 18:56:26] 📋 Pipeline Configuration:
+[2025-12-06 18:56:26]    - Max Iterations: 5
+[2025-12-06 18:56:26]    - Min Test Pass Rate: 70%
+[2025-12-06 18:56:26]    - Template: C:\Projects\BaseAppTemplateNew
+[2025-12-06 18:56:26]    - Output: C:\Projects\NewAgent\output\app_1765047386358
+[2025-12-06 18:56:26]    - Mode: SELF-HEALING (never fails)
+[2025-12-06 18:56:26] 
+📌 Phase: MARKET-RESEARCH
+[2025-12-06 18:56:26] ----------------------------------------
+[2025-12-06 18:56:26] ✅ market-research completed in 0s
+[2025-12-06 18:56:26] ✅ Market research ready: PlantPulse
+[2025-12-06 18:56:26] 
+📌 Phase: DESIGN-SYSTEM
+[2025-12-06 18:56:26] ----------------------------------------
+[2025-12-06 19:01:18] ✅ design-system completed in 292s
+[2025-12-06 19:01:18] ✅ Design system ready: 3 screens designed
+[2025-12-06 19:01:18] 
+══════════════════════════════════════════════════
+[2025-12-06 19:01:18] 📍 ITERATION 1/5
+[2025-12-06 19:01:18] ══════════════════════════════════════════════════
+[2025-12-06 19:01:18] 
+📌 Phase: CODE-GENERATION
+[2025-12-06 19:01:18] ----------------------------------------
+[2025-12-06 19:10:57] ✅ code-generation completed in 579s
+[2025-12-06 19:10:57] 
+📌 Phase: QUALITY-ASSURANCE
+[2025-12-06 19:10:57] ----------------------------------------
+[2025-12-06 19:11:03] ✅ quality-assurance completed in 6s
+[2025-12-06 19:11:03] 
+📌 Phase: SECURITY-AUDIT
+[2025-12-06 19:11:03] ----------------------------------------
+[2025-12-06 19:11:59] ✅ security-audit completed in 56s
+[2025-12-06 19:11:59] 
+📊 Production Readiness (Iteration 1):
+[2025-12-06 19:11:59]    - Test Pass Rate: 100%
+[2025-12-06 19:11:59]    - Critical Vulns: 2
+[2025-12-06 19:11:59]    - High Vulns: 2
+[2025-12-06 19:11:59]    - Unresolved Errors: 4
+[2025-12-06 19:11:59]    - Status: ❌ NOT READY
+[2025-12-06 19:11:59]    - Reasons:
+[2025-12-06 19:11:59]      • 2 critical vulnerabilities found
+[2025-12-06 19:11:59]      • 2 high-severity vulnerabilities must be fixed
+[2025-12-06 19:11:59]      • 4 security errors require fixing
+[2025-12-06 19:11:59] 
+🔄 Continuing to iteration 2...
+[2025-12-06 19:11:59]    Errors to fix: 4
+[2025-12-06 19:11:59] 
+══════════════════════════════════════════════════
+[2025-12-06 19:11:59] 📍 ITERATION 2/5
+[2025-12-06 19:11:59] ══════════════════════════════════════════════════
+[2025-12-06 19:11:59] 
+📌 Phase: CODE-GENERATION
+[2025-12-06 19:11:59] ----------------------------------------
+[2025-12-06 19:23:21] ✅ code-generation completed in 681s
+[2025-12-06 19:23:21] 
+📌 Phase: QUALITY-ASSURANCE
+[2025-12-06 19:23:21] ----------------------------------------
+[2025-12-06 19:23:23] ✅ quality-assurance completed in 2s
+[2025-12-06 19:23:23] 
+📌 Phase: SECURITY-AUDIT
+[2025-12-06 19:23:23] ----------------------------------------
+[2025-12-06 19:23:55] ✅ security-audit completed in 33s
+[2025-12-06 19:23:55] 
+📊 Production Readiness (Iteration 2):
+[2025-12-06 19:23:55]    - Test Pass Rate: 100%
+[2025-12-06 19:23:55]    - Critical Vulns: 2
+[2025-12-06 19:23:55]    - High Vulns: 2
+[2025-12-06 19:23:55]    - Unresolved Errors: 4
+[2025-12-06 19:23:55]    - Status: ❌ NOT READY
+[2025-12-06 19:23:55]    - Reasons:
+[2025-12-06 19:23:55]      • 2 critical vulnerabilities found
+[2025-12-06 19:23:55]      • 2 high-severity vulnerabilities must be fixed
+[2025-12-06 19:23:55]      • 4 security errors require fixing
+[2025-12-06 19:23:55] 
+🔄 Continuing to iteration 3...
+[2025-12-06 19:23:55]    Errors to fix: 4
+[2025-12-06 19:23:55] 
+══════════════════════════════════════════════════
+[2025-12-06 19:23:55] 📍 ITERATION 3/5
+[2025-12-06 19:23:55] ══════════════════════════════════════════════════
+[2025-12-06 19:23:55] 
+📌 Phase: CODE-GENERATION
+[2025-12-06 19:23:55] ----------------------------------------
+[2025-12-06 19:33:50] ✅ code-generation completed in 594s
+[2025-12-06 19:33:50] 
+📌 Phase: QUALITY-ASSURANCE
+[2025-12-06 19:33:50] ----------------------------------------
+[2025-12-06 19:33:54] ✅ quality-assurance completed in 5s
+[2025-12-06 19:33:54] 
+📌 Phase: SECURITY-AUDIT
+[2025-12-06 19:33:54] ----------------------------------------
+[2025-12-06 19:34:51] ✅ security-audit completed in 57s
+[2025-12-06 19:34:51] 
+📊 Production Readiness (Iteration 3):
+[2025-12-06 19:34:51]    - Test Pass Rate: 100%
+[2025-12-06 19:34:51]    - Critical Vulns: 2
+[2025-12-06 19:34:51]    - High Vulns: 1
+[2025-12-06 19:34:51]    - Unresolved Errors: 3
+[2025-12-06 19:34:51]    - Status: ❌ NOT READY
+[2025-12-06 19:34:51]    - Reasons:
+[2025-12-06 19:34:51]      • 2 critical vulnerabilities found
+[2025-12-06 19:34:51]      • 1 high-severity vulnerabilities must be fixed
+[2025-12-06 19:34:51]      • 3 security errors require fixing
+[2025-12-06 19:34:51] 
+🔄 Continuing to iteration 4...
+[2025-12-06 19:34:51]    Errors to fix: 3
+[2025-12-06 19:34:51] 
+══════════════════════════════════════════════════
+[2025-12-06 19:34:51] 📍 ITERATION 4/5
+[2025-12-06 19:34:51] ══════════════════════════════════════════════════
+[2025-12-06 19:34:51] 
+📌 Phase: CODE-GENERATION
+[2025-12-06 19:34:51] ----------------------------------------
+[2025-12-06 19:45:40] ✅ code-generation completed in 649s
+[2025-12-06 19:45:40] 
+📌 Phase: QUALITY-ASSURANCE
+[2025-12-06 19:45:40] ----------------------------------------
+[2025-12-06 19:45:47] ✅ quality-assurance completed in 6s
+[2025-12-06 19:45:47] 
+📌 Phase: SECURITY-AUDIT
+[2025-12-06 19:45:47] ----------------------------------------
+[2025-12-06 19:46:37] ✅ security-audit completed in 50s
+[2025-12-06 19:46:37] 
+📊 Production Readiness (Iteration 4):
+[2025-12-06 19:46:37]    - Test Pass Rate: 100%
+[2025-12-06 19:46:37]    - Critical Vulns: 2
+[2025-12-06 19:46:37]    - High Vulns: 1
+[2025-12-06 19:46:37]    - Unresolved Errors: 3
+[2025-12-06 19:46:37]    - Status: ❌ NOT READY
+[2025-12-06 19:46:37]    - Reasons:
+[2025-12-06 19:46:37]      • 2 critical vulnerabilities found
+[2025-12-06 19:46:37]      • 1 high-severity vulnerabilities must be fixed
+[2025-12-06 19:46:37]      • 3 security errors require fixing
+[2025-12-06 19:46:37] 
+🔄 Continuing to iteration 5...
+[2025-12-06 19:46:37]    Errors to fix: 3
+[2025-12-06 19:46:37] 
+══════════════════════════════════════════════════
+[2025-12-06 19:46:37] 📍 ITERATION 5/5
+[2025-12-06 19:46:37] ══════════════════════════════════════════════════
+[2025-12-06 19:46:37] 
+📌 Phase: CODE-GENERATION
+[2025-12-06 19:46:37] ----------------------------------------
+[2025-12-06 19:56:37] ✅ code-generation completed in 600s
+[2025-12-06 19:56:37] 
+📌 Phase: QUALITY-ASSURANCE
+[2025-12-06 19:56:37] ----------------------------------------
+[2025-12-06 19:56:42] ✅ quality-assurance completed in 4s
+[2025-12-06 19:56:42] 
+📌 Phase: SECURITY-AUDIT
+[2025-12-06 19:56:42] ----------------------------------------
+[2025-12-06 19:57:19] ✅ security-audit completed in 37s
+[2025-12-06 19:57:19] 
+📊 Production Readiness (Iteration 5):
+[2025-12-06 19:57:19]    - Test Pass Rate: 100%
+[2025-12-06 19:57:19]    - Critical Vulns: 2
+[2025-12-06 19:57:19]    - High Vulns: 3
+[2025-12-06 19:57:19]    - Unresolved Errors: 5
+[2025-12-06 19:57:19]    - Status: ❌ NOT READY
+[2025-12-06 19:57:19]    - Reasons:
+[2025-12-06 19:57:19]      • 2 critical vulnerabilities found
+[2025-12-06 19:57:19]      • 3 high-severity vulnerabilities must be fixed
+[2025-12-06 19:57:19]      • 5 security errors require fixing
+[2025-12-06 19:57:19] ⚠️ Could not rename directory: EPERM: operation not permitted, rename 'C:\Projects\NewAgent\output\app_1765047386358' -> 'C:\Projects\NewAgent\output\plantpulse'
+[2025-12-06 19:57:19] 
+══════════════════════════════════════════════════
+[2025-12-06 19:57:19] 🚀 POST-GENERATION DEPLOYMENT
+[2025-12-06 19:57:19] ══════════════════════════════════════════════════
+[2025-12-06 19:57:19] 🗄️ Creating Supabase project...
+[2025-12-06 19:57:30]    ✓ Supabase project created: plantpulse
+[2025-12-06 19:57:30]    ✓ API URL: https://pualugzzhzxaqqnqucdh.supabase.co
+[2025-12-06 19:57:30]    ✓ Auto-configured supabase.ts with credentials
+[2025-12-06 19:57:30]    📊 Setting up pet-care database schema...
+[2025-12-06 19:57:36]    ✓ Database schema configured with RLS policies
+[2025-12-06 19:57:36] 🐙 Pushing to GitHub...
+[2025-12-06 19:57:37]    ⚠️ GitHub push failed: Request failed with status code 409

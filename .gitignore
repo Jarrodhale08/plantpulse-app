@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+
+# Native builds
+ios/
+android/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+!generation.log
+
+# Testing
+coverage/
+
+# Metro
+.metro-health-check*
+
+# Temporary files
+*.tmp
+*.temp
+nul
+
+# Snapshots
+snapshots/
